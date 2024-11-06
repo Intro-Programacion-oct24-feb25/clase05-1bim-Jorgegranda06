@@ -25,15 +25,17 @@ public class Ejemplo3 {
         // >= 3 and < 5 Recuperación
         // < 3 Reprobado
         // && significa and
+        // || significa or
         double promedio = 2;
 
         if (promedio >= 7.5) {
             System.out.printf("Estudiante aprobado con un "
                     + "promedio: %.2f\n", promedio);
         } else {
-            if ((promedio >= 5) || (promedio < 7.5)) {
+            if ((promedio >= 5) && (promedio < 7.5)) {
                 System.out.printf("Estudiante en suspenso con un "
                         + "promedio: %.2f\n", promedio);
+// el or no se debe utilizar porque genera un dato incorrecto al momento de ejecurtarlo
             } else {
                 System.out.printf("Estudiante reprobado con un "
                         + "promedio: %.2f\n", promedio);
